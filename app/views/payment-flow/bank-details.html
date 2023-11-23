@@ -1,0 +1,111 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <form action="" method="POST" class="form">
+    
+      <a class="govuk-back-link docs-creator" href="javascript:history.go(-1)">Back</a> 
+      <div class="govuk-!-padding-bottom-5"></div>  
+
+                <div class="govuk-form-group">
+
+                  <fieldset class="govuk-fieldset">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                      <h1 class="govuk-fieldset__heading">
+                        Has the claimant provided payment details?
+                      </h1>
+                    </legend>
+                    <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="radio-detailsPresent-0" name="next-page" type="radio" value="claim-tasklist-2" aria-controls="conditional-payment-conditional" aria-expanded="true">
+                        <label class="govuk-label govuk-radios__label" for="radio-detailsPresent-0">
+                      Yes
+                    </label>
+                      </div>
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="radio-detailsPresent-1" name="next-page" type="radio" value="claim-tasklist-3">
+                        <label class="govuk-label govuk-radios__label" for="radio-detailsPresent-1">
+                      No
+                    </label>
+                      </div>
+                </div>
+                  </fieldset>
+                </div>
+                <div class="govuk-radios__conditional" id="conditional-payment-conditional">
+          
+
+                  <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                    Type of account
+                  </legend>
+                  <div class="govuk-radios" data-module="govuk-radios">
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="radio-accountType-0" name="accountType" type="radio" value="UKBank">
+                          <label class="govuk-label govuk-radios__label" for="radio-accountType-0">
+                        Bank account
+                      </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="radio-accountType-1" name="accountType" type="radio" value="UKBuildingSociety" aria-controls="conditional-roll-number-conditional" aria-expanded="false">
+                          <label class="govuk-label govuk-radios__label" for="radio-accountType-1">
+                        Building society account
+                      </label>
+                        </div>
+                  </div>
+                
+                </fieldset>
+                </div>
+                
+                
+                  <div class="govuk-form-group">
+                  <label class="govuk-label" for="input-nameOnAccount">
+                    Name on account
+                  </label>
+                <input class="govuk-input govuk-input--width-20" id="input-nameOnAccount" name="nameOnAccount" type="text">
+                </div>
+                
+                  <div class="govuk-form-group">
+                  <label class="govuk-label" for="input-sortCode">
+                    Sort code
+                  </label>
+                <input class="govuk-input govuk-input--width-20" id="input-sortCode" name="sortCode" type="text">
+                </div>
+                
+                  <div class="govuk-form-group">
+                  <label class="govuk-label" for="input-accountNumber">
+                    Account Number
+                  </label>
+                <input class="govuk-input govuk-input--width-20" id="input-accountNumber" name="accountNumber" type="text" maxlength="8">
+                </div>
+                
+                
+                  <span class="govuk-radios__conditional govuk-radios__conditional__inline govuk-radios__conditional--hidden" id="conditional-roll-number-conditional">
+                    <div class="govuk-form-group">
+                  <label class="govuk-label" for="input-rollNumber">
+                    Building society roll number
+                  </label>
+                <input class="govuk-input govuk-input--width-20" id="input-rollNumber" name="rollNumber" type="text" maxlength="18">
+                </div>
+                
+                  </span>
+                        </div>
+                <button class="govuk-button" data-module="govuk-button">
+                  Continue
+                </button>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <form action="" method="POST" class="form">
+    
+      <a class="govuk-back-link docs-creator" href="javascript:history.go(-1)">Back</a> 
+      <div class="govuk-!-padding-bottom-5"></div>  
+
+                <div class="govuk-form-group">
+
+                  <fieldset class="govuk-fieldset">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                      <h1 class="govuk-fieldset__heading">
+                        Do you need to wait for a decision about their Child Benefit?
+                      </h1>
+                    </legend>
+                    <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="changed-name" name="next-page" type="radio" value="claim-tasklist-3">
+                        <label class="govuk-label govuk-radios__label" for="changed-name">
+                          Yes
+                        </label>
+                      </div>
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="changed-name-2" name="next-page" type="radio" value="disallow-claim">
+                        <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                          No
+                        </label>
+                      </div>
+                  </fieldset>
+                </div>
+                <button class="govuk-button" data-module="govuk-button">
+                  Continue
+                </button>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}

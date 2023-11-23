@@ -1,0 +1,48 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+      <div class="govuk-width-container">
+        <a class="govuk-back-link docs-creator" href="javascript:history.go(-1)">Back</a>
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+
+              <form action="/form-handler" method="post" novalidate>
+
+                <div class="govuk-form-group">
+
+                  <div class="govuk-panel govuk-panel--confirmation">
+                    <h1 class="govuk-panel__title">
+                      Claim complete
+                    </h1>
+                    <div class="govuk-panel__body" style="font-size: 24px">
+                      Decision letter sent automatically
+                    </div>
+                  </div>
+                  <br>
+                  <h3 class="govuk-heading-m">The claim has been disallowed</h3>
+
+                    <p class="govuk-body">The claimant has no record of Child Benefit entitlement on or since their partner's death.</p>
+
+                    <a href="#" class="govuk-link govuk-link--no-visited-state" style="font-size: 19px">View the claim</a>
+                    
+
+                  
+
+              
+                
+              </form>
+            </div>
+        </main>
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Home – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">
+      Claim Manager Prototype
+    </h1>
+    <p class="govuk-body">This prototype has been created in Private Beta to test iterations to Claim Manager. This is the system agents use to process Bereavement Support Payment applications.</p>
+
+    <h1 class="govuk-heading-m">
+      <span class="govuk-caption-m">w/c 05.06.23</span>
+      User Research
+    </h1>
+    
+    <p class="govuk-body">The aim of this research is to test an agents journey to verify Child Benefit. Existing content has had to be updated to align with policy.</p>
+    <p class="govuk-body">Additional iterations include:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>restructure of agent tasks</li>
+      <li>new 'claim complete' page</li>
+      <li>new content on claim history.</li>
+    </ul><br>    
+    <button onclick="javascript:location.href='/cb-flow-1/claim-tasklist'" class="govuk-button" data-module="govuk-button">
+      Journey A
+    </button>
+    <button onclick="javascript:location.href='/cb-flow-2/claim-tasklist'" class="govuk-button" data-module="govuk-button">
+      Journey B
+    </button>
+    <button onclick="javascript:location.href='/payment-flow/claim-tasklist'" class="govuk-button" data-module="govuk-button">
+      Journey C
+    </button>
+
+              
+  </div>
+</div>
+
+{% endblock %}

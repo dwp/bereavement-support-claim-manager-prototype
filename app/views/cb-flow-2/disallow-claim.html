@@ -1,0 +1,46 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+      <div class="govuk-width-container">
+        <a class="govuk-back-link docs-creator" href="javascript:history.go(-1)">Back</a>
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+
+              <form action="claim-complete" method="post" novalidate>
+
+                <div class="govuk-form-group">
+
+                  <fieldset class="govuk-fieldset">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                      <h1 class="govuk-fieldset__heading">
+                        You are about to disallow this claim
+                      </h1>
+                    </legend>
+                    <p class="govuk-body">The claimant has no record of Child Benefit entitlement on or since their partner's death.</p>
+                    
+
+                  </fieldset>
+                </div>
+
+                <div class="govuk-button-group">
+                  <button class="govuk-button govuk-button--warning" data-module="govuk-button">
+                    Disallow claim
+                  </button>
+                  <a class="govuk-link" href="#">Cancel</a>
+                </div>
+              </form>
+            </div>
+        </main>
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}
